@@ -18,3 +18,12 @@ D:\SLIIT\4 Year\Image Processing and Understand - IUP\lab1\IPU first Lab\IPU fir
 D:\SLIIT\4 Year\Image Processing and Understand - IUP\lab1\IPU first Lab\IPU first Lab\obj\Debug\IPU_first_Lab.Form1.resources
 D:\SLIIT\4 Year\Image Processing and Understand - IUP\lab1\IPU first Lab\IPU first Lab\obj\Debug\IPU_first_Lab.Properties.Resources.resources
 D:\SLIIT\4 Year\Image Processing and Understand - IUP\lab1\IPU first Lab\IPU first Lab\obj\Debug\IPU first Lab.csproj.GenerateResource.Cache
+D:\SLIIT\4 Year\Image Processing and Understand - IUP\Labs\lab1\IPU first Lab\IPU first Lab\bin\Debug\IPU first Lab.exe.config
+D:\SLIIT\4 Year\Image Processing and Understand - IUP\Labs\lab1\IPU first Lab\IPU first Lab\obj\Debug\IPU first Lab.exe
+D:\SLIIT\4 Year\Image Processing and Understand - IUP\Labs\lab1\IPU first Lab\IPU first Lab\obj\Debug\IPU first Lab.pdb
+D:\SLIIT\4 Year\Image Processing and Understand - IUP\Labs\lab1\IPU first Lab\IPU first Lab\bin\Debug\IPU first Lab.exe
+D:\SLIIT\4 Year\Image Processing and Understand - IUP\Labs\lab1\IPU first Lab\IPU first Lab\bin\Debug\IPU first Lab.pdb
+D:\SLIIT\4 Year\Image Processing and Understand - IUP\Labs\lab1\IPU first Lab\IPU first Lab\obj\Debug\IPU first Lab.csprojResolveAssemblyReference.cache
+D:\SLIIT\4 Year\Image Processing and Understand - IUP\Labs\lab1\IPU first Lab\IPU first Lab\obj\Debug\IPU_first_Lab.Form1.resources
+D:\SLIIT\4 Year\Image Processing and Understand - IUP\Labs\lab1\IPU first Lab\IPU first Lab\obj\Debug\IPU_first_Lab.Properties.Resources.resources
+D:\SLIIT\4 Year\Image Processing and Understand - IUP\Labs\lab1\IPU first Lab\IPU first Lab\obj\Debug\IPU first Lab.csproj.GenerateResource.Cache

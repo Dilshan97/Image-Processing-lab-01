@@ -14,9 +14,9 @@ namespace IPU_first_Lab
         IplImage binaryImage;
         IplImage negetiveImage;
 
-        public void loadOriginalImage()
+        public void loadOriginalImage(String filename)
         {
-            SourceImage = Cv.LoadImage("apples.jpg", LoadMode.Color); // Original Image Load to the Picture Box
+            SourceImage = Cv.LoadImage(filename, LoadMode.Color); // Original Image Load to the Picture Box
             Cv.SaveImage("1.jpg", SourceImage); // get a copy of original image
         }
 

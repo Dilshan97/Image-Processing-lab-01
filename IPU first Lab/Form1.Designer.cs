@@ -34,6 +34,8 @@
             this.thresholdBtn = new System.Windows.Forms.Button();
             this.negetiveBtn = new System.Windows.Forms.Button();
             this.loadBtn = new System.Windows.Forms.Button();
+            this.extractBtn = new System.Windows.Forms.Button();
+            this.transformBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.convertedImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.originalImage)).BeginInit();
             this.SuspendLayout();
@@ -57,7 +59,7 @@
             // 
             // grayBtn
             // 
-            this.grayBtn.Location = new System.Drawing.Point(332, 64);
+            this.grayBtn.Location = new System.Drawing.Point(332, 32);
             this.grayBtn.Name = "grayBtn";
             this.grayBtn.Size = new System.Drawing.Size(126, 43);
             this.grayBtn.TabIndex = 2;
@@ -67,7 +69,7 @@
             // 
             // thresholdBtn
             // 
-            this.thresholdBtn.Location = new System.Drawing.Point(332, 123);
+            this.thresholdBtn.Location = new System.Drawing.Point(332, 84);
             this.thresholdBtn.Name = "thresholdBtn";
             this.thresholdBtn.Size = new System.Drawing.Size(126, 43);
             this.thresholdBtn.TabIndex = 3;
@@ -77,7 +79,7 @@
             // 
             // negetiveBtn
             // 
-            this.negetiveBtn.Location = new System.Drawing.Point(332, 183);
+            this.negetiveBtn.Location = new System.Drawing.Point(332, 137);
             this.negetiveBtn.Name = "negetiveBtn";
             this.negetiveBtn.Size = new System.Drawing.Size(126, 43);
             this.negetiveBtn.TabIndex = 4;
@@ -95,11 +97,33 @@
             this.loadBtn.UseVisualStyleBackColor = true;
             this.loadBtn.Click += new System.EventHandler(this.loadBtn_Click);
             // 
+            // extractBtn
+            // 
+            this.extractBtn.Location = new System.Drawing.Point(332, 192);
+            this.extractBtn.Name = "extractBtn";
+            this.extractBtn.Size = new System.Drawing.Size(126, 43);
+            this.extractBtn.TabIndex = 6;
+            this.extractBtn.Text = "Extract >>";
+            this.extractBtn.UseVisualStyleBackColor = true;
+            this.extractBtn.Click += new System.EventHandler(this.extractBtn_Click);
+            // 
+            // transformBtn
+            // 
+            this.transformBtn.Location = new System.Drawing.Point(332, 241);
+            this.transformBtn.Name = "transformBtn";
+            this.transformBtn.Size = new System.Drawing.Size(126, 39);
+            this.transformBtn.TabIndex = 7;
+            this.transformBtn.Text = "Transform >>";
+            this.transformBtn.UseVisualStyleBackColor = true;
+            this.transformBtn.Click += new System.EventHandler(this.transformBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 333);
+            this.Controls.Add(this.transformBtn);
+            this.Controls.Add(this.extractBtn);
             this.Controls.Add(this.loadBtn);
             this.Controls.Add(this.negetiveBtn);
             this.Controls.Add(this.thresholdBtn);
@@ -123,6 +147,8 @@
         private System.Windows.Forms.Button thresholdBtn;
         private System.Windows.Forms.Button negetiveBtn;
         private System.Windows.Forms.Button loadBtn;
+        private System.Windows.Forms.Button extractBtn;
+        private System.Windows.Forms.Button transformBtn;
     }
 }
 

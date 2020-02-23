@@ -39,8 +39,9 @@ namespace IPU_first_Lab
             {
                 pc.loadOriginalImage(of.FileName); // call  the load image method
                 String path = of.FileName.ToString();
-                originalImage.ImageLocation = path; // display in to the original picture box
 
+                originalImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                originalImage.ImageLocation = path; // display in to the original picture box
             }
             
         }
@@ -48,18 +49,34 @@ namespace IPU_first_Lab
         private void grayBtn_Click(object sender, EventArgs e)
         {
             pc.grayScale();
+            convertedImage.SizeMode = PictureBoxSizeMode.StretchImage;
             convertedImage.ImageLocation = "2.jpg";
         }
 
         private void thresholdBtn_Click(object sender, EventArgs e)
         {
             pc.threshold();
+            convertedImage.SizeMode = PictureBoxSizeMode.StretchImage;
             convertedImage.ImageLocation = "3.jpg";
         }
 
         private void negetiveBtn_Click(object sender, EventArgs e)
         {
-            pc.negetive();
+            pc.Neg();
+            convertedImage.SizeMode = PictureBoxSizeMode.StretchImage;
+            convertedImage.ImageLocation = "4.jpg";
+        }
+
+        private void extractBtn_Click(object sender, EventArgs e)
+        {
+            pc.extract();
+        }
+
+        private void transformBtn_Click(object sender, EventArgs e)
+        {
+            pc.transform();
+            convertedImage.SizeMode = PictureBoxSizeMode.StretchImage;
+            convertedImage.ImageLocation = "5.jpg";
         }
     }
 }

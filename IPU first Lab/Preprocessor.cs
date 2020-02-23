@@ -13,6 +13,7 @@ namespace IPU_first_Lab
         IplImage grayImage;
         IplImage binaryImage;
         IplImage negetiveImage;
+        IplImage cvtNegativeImage;
 
         public void loadOriginalImage(String filename)
         {
@@ -20,6 +21,7 @@ namespace IPU_first_Lab
             Cv.SaveImage("1.jpg", SourceImage); // get a copy of original image
         }
 
+        //convert image to gray
         public void grayScale()
         {
             grayImage = Cv.CreateImage(SourceImage.Size, BitDepth.U8, 1); // create a new image same as the original image
@@ -42,5 +44,42 @@ namespace IPU_first_Lab
             negetiveImage = Cv.CreateImage(SourceImage.Size, BitDepth.U8, 1);
             
         }
+
+        public void extract()
+        {
+            System.Windows.Forms.MessageBox.Show("Height: " + SourceImage.Height + " Width: " + SourceImage.Width + " No of Channel: " + SourceImage.NChannels);
+        }
+
+
+        public void Neg()
+        {
+            grayScale();
+            IplImage negImage = Cv.CreateImage(grayImage.Size, BitDepth.U8, 1);
+            Cv.Not(grayImage, negImage);
+            Cv.SaveImage("4.jpg", negImage);
+        }
+
+        public void CvtNegative()
+        {
+            for (int y = 0; y < grayImage.Height; y++)
+            {
+                for (int x = 0; x < grayImage.Width; x++)
+                {
+                    double getPixValue = 0;
+                    getPixValue = Cv.GetReal2D(grayImage, y, x);
+                    double nexPixValue = 255 - getPixValue;
+                    Cv.SetReal2D(cvtNegativeImage, y, x, nexPixValue);
+                }
+            }
+        }
+
+        public void transform()
+        {
+            grayScale();
+            cvtNegativeImage = Cv.CreateImage(grayImage.Size, BitDepth.U8, 1);
+            CvtNegative();
+            Cv.SaveImage("5.jpg", cvtNegativeImage);
+        }
+
     }
 }
